@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color:rgb(89, 75, 126);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.sub-1,.sub-2,.sub-3{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    margin:30px 20px;
+    padding: 20px;
+    padding-top:55px ;
+}
+
+.sub-1:hover,.sub-2:hover,.sub-3:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 5px whitesmoke;
+}
+
+.currency{
+    font-weight: bold;
+    font-size: 45px;
+    margin-left: 11px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.month{
+    font-size: 15px;
+    color: grey;
+}
+
+.base1,.base2,.base3{
+    font-size: 26px;
+    margin-left: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.base1,.tick1{
+    font-weight: bold;
+    color: rgb(240, 205, 7);
+}
+
+.base2,.tick2{
+    font-weight: bold;
+    color: rgb(83, 158, 255);
+}
+
+.base3,.tick3{
+    font-weight: bold;
+    color: rgb(79, 204, 106);
+}
+
+.info{
+    margin-left: 11px;
+    color: rgb(145, 143, 143);
+    font-size: 15px;
+    line-height: 22px;
+    text-shadow: 0.5px 0px gray;
+    margin-bottom: 40px;
+    padding-right: 5px;
+}
+
+.point{
+    font-size: 15px;
+    color: rgb(99, 96, 96);
+    padding-top: 20px;
+    font-weight: 300;
+    text-shadow: 0.5px 0px gray;
+    text-align: justify;
+}
+
+.p{
+    border-top: 2px solid rgb(219, 215, 215);
+    padding: 10px;
+}
+
+button{
+   width: 230px;
+   height: 40px;
+   margin-top: 70px;
+   margin-left: 10px;
+   border-radius: 7px;
+   border: 0px;
+   cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 2px 2px 5px gray;
+}
+
+#b1{
+    background: gainsboro;
+    color: gray;
+    font-size: medium;
+}
+#b2{
+    border: 2px solid gainsboro;
+    background: transparent;
+    color: gray;
+    font-size: medium;
+}
+#b3{
+    font-size: medium;
+    background-color: rgb(79, 204, 106);
+    color: white;
+}
+
+@media (max-width:968px) {
+    .point{
+        font-size: 12px;
+    }
+    .cards{
+        padding: 5px;
+    }
+}
+@media (max-width:925px) {
+    .sub-1,.sub-2,.sub-3{
+     margin: 30px 5px;   
+    }
+}
+
+@media (max-width:898px) {
+    .cards{
+        display:block;
+    }
+    .sub-1,.sub-2,.sub-3{
+     width: 500px;
+     height: 500px;
+     margin: 30px auto;  
+    }
+}
+
+@media (max-width:554px) {
+    .sub-1,.sub-2,.sub-3{
+        width: 250px;
+    height: 500px; 
+       }
+}
